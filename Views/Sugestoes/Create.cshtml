@@ -12,21 +12,18 @@
 
 </head>
 
-
-    <div class="loginbox">
+<body>
+    <div class="loginbox" style="overflow:auto;">
         <h1>Sugestão</h1>
-        <form asp-action="Create">
-            <div class="center">
-                <textarea placeholder="Deixe seu comentário aqui!" class="text-area" asp-for="Sugestoes"></textarea>
-                <span asp-validation-for="Sugestoes" class="text-danger"></span>
-                <br />
-                <input type="submit" name="" value="Deixar feedback">
-            </div>
-        </form>
-        <div class="container">
-            <main role="main" class="pb-3">
+        <form asp-action="Create" style="overflow:auto;">
 
-            </main>
+            <textarea placeholder="Deixe sua sugestão aqui!" class="text-area" asp-for="Sugestoes"></textarea>
+            <span asp-validation-for="Sugestoes" class="text-danger"></span>
+            <br />
+            <input type="submit" name="" value="Deixar feedback">
+        </form>
+        <div>
+            <a class="btn" asp-controller="Home" asp-action="Index">Voltar</a>
         </div>
     </div>
 
@@ -34,3 +31,4 @@
     @section Scripts {
         @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
     }
+</body>

@@ -19,7 +19,8 @@ namespace Simbora04.Models
 
 		[Display(Name = "Senha")]
 		[Required(ErrorMessage = "Obrigatório informar a senha")]
-		public string Senha { get; set; }
+		[DataType(DataType.Password)]
+        public string Senha { get; set; }
 
 	}
 }

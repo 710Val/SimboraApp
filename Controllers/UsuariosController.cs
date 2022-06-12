@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Simbora04.Models;
-
 namespace Simbora04.Controllers
 {
     public class UsuariosController : Controller
@@ -42,6 +41,18 @@ namespace Simbora04.Controllers
             return View(usuarios);
         }
 
+        public IActionResult ContaJaExiste()
+        {
+            return View();
+        }
+
+        public IActionResult Perfil()
+        {
+            return View();
+        }
+
+
+
         // GET: Usuarios/Create
         public IActionResult Create()
         {
@@ -57,6 +68,7 @@ namespace Simbora04.Controllers
         {
             if (ModelState.IsValid)
             {
+                
                 _context.Add(usuarios);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
