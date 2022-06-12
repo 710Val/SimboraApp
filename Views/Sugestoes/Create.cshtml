@@ -1,0 +1,36 @@
+﻿@model Simbora04.Models.Sugestao
+
+@{
+    ViewData["Title"] = "Create";
+}
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Simbora</title>
+
+    <link rel="stylesheet" href="/css/usuarios.css" />
+
+</head>
+
+
+    <div class="loginbox">
+        <h1>Sugestão</h1>
+        <form asp-action="Create">
+            <div class="center">
+                <textarea placeholder="Deixe seu comentário aqui!" class="text-area" asp-for="Sugestoes"></textarea>
+                <span asp-validation-for="Sugestoes" class="text-danger"></span>
+                <br />
+                <input type="submit" name="" value="Deixar feedback">
+            </div>
+        </form>
+        <div class="container">
+            <main role="main" class="pb-3">
+
+            </main>
+        </div>
+    </div>
+
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }

@@ -1,0 +1,86 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background: url(img.jpeg);
+    background-position: center;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.center {
+    width: 320px;
+    height: 420px;
+    background: none;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    text-align: center;
+}
+
+    .center h1 {
+        margin-bottom: auto;
+        font-weight: bold;
+        font-family: "Georgia";
+        font-size: 49px;
+        color: #ed5757;
+    }
+/*  @media screen and (min-width: 780px) {
+    body {
+        background-size: 780px;
+    }
+    .center {
+    margin: auto;
+    width: 90%;
+    }
+}
+     @media screen and (min-width: 1024px){
+    .center {
+        margin: auto;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        }
+    .btns {
+        width: 50%;
+        display: flex;
+       margin-left: 235px;
+       
+            }
+    .btn {
+        margin-right: 30px;
+        text-align: center;     
+    }
+     } */
+
+.btns {
+    border: none;
+    border-bottom: 1px, solid, #fff;
+    background: #FF69B4;
+    outline: 1px solid white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+    .btns:hover {
+        cursor: pointer;
+    }
+
+.btn {
+    background: #FF69B4;
+    border: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    width: 90%;
+}
+
+    .btn:hover {
+        cursor: pointer;
+    }
