@@ -1,26 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
+using MySql.Data.MySqlClient;
+using System;
+using System.Collections.Generic;
+using System.Security.Claims;
+using System.Threading.Tasks;
+
 using Simbora04.Models;
 namespace Simbora04.Controllers
 {
     public class UsuariosController : Controller
     {
-        private readonly Contexto _context;
+        private readonly Contexto _contexto;
 
         public UsuariosController(Contexto context)
         {
-            _context = context;
+            _contexto = context;
         }
 
         // GET: Usuarios
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Usuario.ToListAsync());
+            return View(await _contexto.Usuario.ToListAsync());
         }
 
         // GET: Usuarios/Details/5
@@ -31,7 +32,7 @@ namespace Simbora04.Controllers
                 return NotFound();
             }
 
-            var usuarios = await _context.Usuario
+            var usuarios = await _contexto.Usuario
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (usuarios == null)
             {
@@ -84,7 +85,7 @@ namespace Simbora04.Controllers
                 return NotFound();
             }
 
-            var usuarios = await _context.Usuario.FindAsync(id);
+            var usuarios = await _contexto.Usuarios.FindAsync(id);
             if (usuarios == null)
             {
                 return NotFound();
