@@ -21,25 +21,3 @@
     padding: 70px 30px;
     border-radius: 20px;
 }
-    .loginbox input.btn.btn-primary {
-        border: none;
-        outline: none;
-        height: 40px;
-        background: #FF7575;
-        color: #fff;
-        font-size: 18px;
-        border-radius: 20px;
-    }
-        .loginbox input.btn.btn-primary:hover {
-            cursor: pointer;
-            background: #C68585;
-            color: #000;
-        }
-h1 {
-    align-content: center;
-    color: #C68585;
-}
-
-.text-danger {
-    color: #dc3545;
-}

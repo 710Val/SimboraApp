@@ -8,6 +8,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .loginbox {
     width: 320px;
     height: 500px;
@@ -21,7 +22,7 @@
     padding: 70px 30px;
     border-radius: 20px;
 }
-    .loginbox input.btn.btn-primary {
+    .loginbox input[type="submit"] {
         border: none;
         outline: none;
         height: 40px;
@@ -30,16 +31,9 @@
         font-size: 18px;
         border-radius: 20px;
     }
-        .loginbox input.btn.btn-primary:hover {
+
+        .loginbox input[type="submit"]:hover {
             cursor: pointer;
             background: #C68585;
             color: #000;
         }
-h1 {
-    align-content: center;
-    color: #C68585;
-}
-
-.text-danger {
-    color: #dc3545;
-}

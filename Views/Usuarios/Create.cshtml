@@ -26,11 +26,12 @@
                           <span asp-validation-for="Senha" class="text-danger"></span>
                       </div>
                       <div class="form-group">
-                          <input type="submit" value="Criar conta!" class="btn btn-primary"  asp-controller="Usuarios" asp-action="Details"/>
+                          <input type="submit" value="Criar conta!" class="btn btn-primary" />
+                          <a class="btn btn-primary" asp-controller="Usuarios" asp-action="ContaJaExiste" style=" border: none; outline: none; height: 40px; background: #FF7575; color: #fff; font-size: 18px; border-radius: 20px; margin-top: 20px;">Já tenho conta!</a>
                           <a asp-action="Index">Back to List</a>
                       </div>
-                  
-            </form>
+                  </form>
+              
         </div>
     </div>
 

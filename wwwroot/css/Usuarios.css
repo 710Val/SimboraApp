@@ -72,12 +72,16 @@ h1 {
     font-size: 12px;
     line-height: 20px;
     color: darkgrey;
+    background-color: black;
 }
 
     .loginbox a:hover {
         color: #C68585;
     }
 
-.form-group {
-    width: 200px;
+.loginbox a.btn-primary {
+    background-color: black;
+}
+div div form div a.btn.btn-primary {
+    background-color: black;
 }
