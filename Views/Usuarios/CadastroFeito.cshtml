@@ -1,0 +1,20 @@
+﻿@model Simbora04.Models.Usuarios
+
+@{
+    ViewData["Title"] = "CadastroFeito";
+}
+
+
+<head>
+
+    <link rel="stylesheet" href="/css/cadastroConcluido.css" />
+</head>
+<body>
+
+    <div class="loginbox">
+        <h1 style="color: #FF7575">Cadastro Concluído!</h1>
+        <a class"btn btn-primary" asp-controller="Eventos" asp-action="Index" style=" border: none; outline: none; height: 40px; background: #FF7575; color: #fff; font-size: 18px; border-radius: 20px; margin-top: 20px;">Ver Eventos</a>
+        <a class"btn btn-primary" asp-controller="Eventos" asp-action="Create" style=" border: none; outline: none; height: 40px; background: #FF7575; color: #fff; font-size: 18px; border-radius: 20px; margin-top: 20px;">Criar Eventos!</a>
+        <a class="btn btn-primary" asp-controller="Usuarios" asp-action="ContaJaExiste" style=" border: none; outline: none; height: 40px; background: #FF7575; color: #fff; font-size: 18px; border-radius: 20px; margin-top: 20px;">Voltar</a>
+    </div>
+</body>

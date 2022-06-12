@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Simbora04.Models.Sugestao>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Simbora</title>
+
+    <link rel="stylesheet" href="/css/sugestaoIndex.css" />
+
+</head>
+<body>
+
+    <div class="loginbox">
+
+        <h1 style="color: #FF7575"> Sugestões</h1>
+
+
+        <table>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Sugestoes)
+                        </td>
+                        <td>
+                            <a asp-action="Delete" asp-route-id="@item.Id" sytle="color:#FF7575 ">Delete</a>
+                        </td>
+                    </tr>
+
+                }
+
+            </tbody>
+        </table>
+        <div class="btn" style="width: 240px;">
+            <a asp-action="Create">Dar outra Sugestão!</a>
+        </div> <br />
+        <div class="btn" style="width: 240px;">
+            <a asp-action="Create">Voltar</a>
+        </div> <hr />
+    
+
+    </div>
+</body>
