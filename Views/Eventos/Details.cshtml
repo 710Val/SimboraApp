@@ -17,38 +17,38 @@
     <div class="center">
         <h4>@Html.DisplayFor(model => model.Nome)</h4>
 
-        <dl class="row">
+    <dl class="row">
             <dt class="col-sm-2" syle="margin: auto;">
-                @Html.DisplayNameFor(model => model.Nome)
-            </dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
             <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.Nome)
-            </dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
             <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.Data)
-            </dt>
+            @Html.DisplayNameFor(model => model.Data)
+        </dt>
             <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.Data)
-            </dd>
+            @Html.DisplayFor(model => model.Data)
+        </dd>
             <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.Local)
-            </dt>
+            @Html.DisplayNameFor(model => model.Local)
+        </dt>
             <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.Local)
-            </dd>
+            @Html.DisplayFor(model => model.Local)
+        </dd>
             <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.Degraca)
-            </dt>
+            @Html.DisplayNameFor(model => model.Degraca)
+        </dt>
             <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.Degraca)
-            </dd>
-        </dl>
+            @Html.DisplayFor(model => model.Degraca)
+        </dd>
+    </dl>
         <div style="width: 200px;">
             <a asp-action="Edit" asp-route-id="@Model.Id" class="btn" style="width: 200px;">Edit</a>
-        </div>
-        <div>
+</div>
+<div>
             <a asp-action="Index" class="btn">Back to List</a>
         </div>
-    </div>
+</div>
 </body>
 </html>

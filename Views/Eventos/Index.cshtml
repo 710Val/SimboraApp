@@ -16,49 +16,55 @@
 
     <div class="loginbox">
         <h1 style="color: #FF7575;"> Eventos</h1>
-        <table class="table">
-            <thead>
-                <tr>
+<table class="table">
+    <thead>
+        <tr>
                     <th style="margin: auto;">
-                        @Html.DisplayNameFor(model => model.Nome)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Data)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Local)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Degraca)
-                    </th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Data)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Horario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Local)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Degraca)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
                 @foreach (var item in Model)
                 {
-                    <tr>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Nome)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Data)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Local)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Degraca)
-                        </td>
-                        <td>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Data)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Horario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Local)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Degraca)
+            </td>
+            <td>
                             <a asp-action="Edit" asp-route-id="@item.Id">Edit</a>
                             <a asp-action="Details" asp-route-id="@item.Id">Details</a>
-                            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
         <div>
             <a class="btn" asp-action="Create">Criar novo evento </a>
             <a class="btn" asp-action="Index" asp-controller="Home">Voltar </a>

@@ -32,22 +32,22 @@ h1 {
 }
 
 input.btn1 {
-    border: none;
-    outline: none;
-    height: 40px;
-    background: #FF7575;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 20px;
+        border: none;
+        outline: none;
+        height: 40px;
+        background: #FF7575;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 20px;
     width: 245px;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-}
-    input.btn1:hover {
-        cursor: pointer;
-        background: #C68585;
-        color: #000;
     }
+    input.btn1:hover {
+            cursor: pointer;
+            background: #C68585;
+            color: #000;
+        }
 
 a.btn1 {
     border: none;
@@ -60,4 +60,6 @@ a.btn1 {
     
     text-decoration: none;
 
+.text-danger {
+    color: #dc3545;
 }
